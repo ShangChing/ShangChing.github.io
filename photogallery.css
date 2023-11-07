@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+  .total{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+  }
+  .row {
+    
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: space-around;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    
+    
+    flex: 33%;
+    max-width: 33.3%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  /* .row .column:nth-child(3) {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+  } */
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  .content{
+    font-size: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .intro{
+    position: relative;
+  }
+  .photo{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    opacity: 20%;
+  }

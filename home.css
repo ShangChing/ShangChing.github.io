@@ -1,0 +1,403 @@
+* {
+    box-sizing: border-box;
+  }
+  /* Style the body */
+body {
+    font-family:monospace;
+    margin: 0;
+    
+  }
+  a{
+    text-decoration:none
+  }
+  .total{
+    width: 100%;
+    
+    display: flex;
+    padding: 20px;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+    
+    
+  }
+  
+  /* Main column */
+  .main {
+    /* background-color: tomato; */
+    margin-left: auto;
+    margin-right: auto;
+    
+    flex: 60%;
+  
+    /* background-color: white; */
+    
+  }
+  .side {
+    /* background-color: tomato; */
+    writing-mode:vertical-lr;
+    text-orientation:upright;
+    flex: 20%;
+    /* background-color: #f1f1f1; */
+    padding: 20px;
+    position: relative;
+    
+  }
+  .side p{
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    font-size: 30px;
+  }
+  .top{
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  .top img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+    max-width:15%;
+    max-height:15%;
+  }
+  .middle{
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .middle img{
+    max-width:100%;
+    max-height:100%;
+
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+  .text{
+    /* background-color: tomato; */
+    writing-mode:vertical-lr;
+    text-orientation:upright;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    font-size: 30px;
+    
+  }
+  
+  
+  
+  /* Header/logo Title */
+  /* .header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+  } */
+  
+  /* Style the top navigation bar */
+  /* .navbar {
+    display: flex;
+    background-color: #333;
+    
+  } */
+  
+  /* Style the navigation bar links */
+  /* .navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  } */
+  
+  /* Change color on hover */
+  /* .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  } */
+  
+  /* Column container */
+  /* .row {  
+    display: flex;
+    flex-wrap: wrap;
+  } */
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  /* .side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  } */
+  
+  /* Main column */
+   /* .main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+  }  */
+  
+  /* Fake image, just for this example */
+   /* .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  } */
+  
+  /* Footer */
+  /* .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+  }  */
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  /* @media screen and (max-width: 700px) {
+    .row, .navbar {   
+      flex-direction: column;
+    }
+  } */
+
+  
+  /* .nav{
+    padding: 50px;
+    text-align: center;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    
+  } */
+  /* .nav-layout{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-items:space-between;
+  } */
+  nav{
+    
+    width: 100%;
+    writing-mode:vertical-lr;
+    text-orientation:upright;
+    /* padding: 50px; */
+    text-align: center;
+    /* 正中央 */
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+    
+
+    
+    
+    
+  }
+  
+  
+  nav ul{
+    
+    width: 100%;
+    
+    
+    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* display: inline-block; */
+    /* background: #ddd; */
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    
+  }
+    
+  nav li{
+    
+    
+    /* float: center;  */
+    /*width: 150px;
+    height: 65px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 65px;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: rgba(0,0,0,0.7);
+    cursor: pointer;
+    
+    
+  }
+      
+    .fb{
+      writing-mode: horizontal-tb;
+      text-orientation: sideways;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    nav li:hover{
+      font-weight: 900;
+      color: chocolate;
+        /* background: #d5d5d5; */
+      border-radius: 5px
+    }
+       
+    ul.drop-menu{
+      
+      writing-mode: horizontal-tb;
+      text-orientation: sideways;
+      position: absolute;
+      top: 100%;
+      left: 30%;
+      
+      /* width: 100%; */
+      padding: 0;
+      
+    }
+    
+    .branch{
+      position: absolute;
+      top: 100%;
+      left:30%;
+      
+    }
+    
+    
+    
+    ul.drop-menu li{
+      /* display: flex;
+      flex-wrap: wrap; */
+
+      /* background: url('分支.png') center right no-repeat; 
+      background-size: cover; */
+      /* background: #666; */
+      /* color: rgba(255,255,255,0.7); */
+
+      /* width: 100%; */
+      list-style: none;
+      position: relative;
+      box-sizing: border-box;
+      width: 150px;
+      height: 65px;
+      
+      
+      
+    }
+    ul.drop-menu li img{
+      width: 75px;
+      position: absolute;
+      top: 12px;
+      left: 0%;
+    }
+    ul.drop-menu li p{
+      color: #333;
+      left: 10px;
+      top: -20px;
+      
+      position: relative;
+      font-size: 25px;
+      
+    }
+    .fb ul.drop-menu li p{
+      left: 0px;
+    }
+    
+    
+    
+    
+    
+    
+    /* ul.drop-menu li::before {
+      content: url('分支.png');
+      height: 1em;
+      width: 1em;
+    } */
+    /* ul.drop-menu li::marker {
+      content: url('分支.png') 
+    } */
+    /* ul.drop-menu li:before {
+      
+      content:'';
+    display:inline-block;
+    background-image: url(分支.png);
+     
+     background-size:contain;
+    height:1em;
+    width:1em;
+    background-repeat:no-repeat;
+    flex:0 0 1em;
+    vertical-align: bottom;
+  
+      
+    } */
+    /* ul.drop-menu li:before {
+      
+      content: url('分支.png');
+      height: 1em;
+      width: 1em;
+
+  
+      
+    } */
+    
+
+    ul.drop-menu li:hover{
+      background: none;
+      
+    }
+    ul.drop-menu li p:hover{
+      color: chocolate;
+      font-weight: 900;
+    }
+    ul.drop-menu li:last-child{
+      border-radius: 0px 0px 5px 5px;
+    }
+    
+    li.animation-list li{
+      perspective: 1000px;
+      opacity: 1;
+      animation-name: list;
+      animation-duration: 600ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards;
+      animation-delay: calc(60ms*var(--i)); 
+    }
+    
+      
+    @keyframes list {
+      0%{
+        opacity: 0;
+        /* -webkit-transform: rotateY(10deg); */
+        transform: rotateY(-120deg) translateY(30px);
+      }
+      100%{
+        opacity: 1;
+        transform: rotateY(0deg) translateY(0px);
+      }
+    }
+  
+    
+      
+  
+  
+  
+  ul.drop-menu li{
+    /* display: none ; */
+    opacity: 0;
+
+  } 
+  
+    
+  /* li:hover ul.drop-menu li{
+    
+      display: block ;
+      opacity: 1;
+    
+    
+  } */
+
+   
+  
