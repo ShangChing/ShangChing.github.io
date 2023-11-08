@@ -77,3 +77,13 @@
     top: 0px;
     opacity: 20%;
   }
+  .video{
+    width: 100%;
+    background-color: tomato;
+    position: relative;
+    
+  }
+  .video iframe{
+    position: absolute;
+    right: 10%;
+  }
